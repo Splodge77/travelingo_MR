@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>TravelApp</title>
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/phrases.css">
+  <link rel="stylesheet" type="text/css" href="css/weather.css">
+  <script src="bundle.js"></script>
+
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+
+</head>
+
+<body class="flex flex-vertical">
+  <header class="page-header" id="banner">
+    <h1>traveLingo</h1>
+    <h4>your personal phrasebook</h4>
+  </header>
+
+  <aside class="additional-info flex">
+    <div id="flag-id" class="flag">
+    </div>
+
+    <div id="weather" hidden>
+    </div>
+
+    <div id="map" hidden aria-hidden="true">
+    </div>
+
+  </aside>
+
+  <main>
+
+
+    <div class="flex flex-vertical">
+
+      <section class="select-and-flag flex">
+        <label hidden for="countries" value="Country Select Dropdown">Select Destination</label>
+        <select id="countries">
+          <option selected disabled>Select a destination country</option>
+        </select>
+      </section>
+
+
+      <section id="input-phrase-section" hidden>
+        <form action="">
+          <label for="phrase input"></label>
+          <input name="phrase input" type="text" id="phrase-input" placeholder="Enter your custom phrase">
+          <label for="submit button"></label>
+          <button type="button" name="submitButton" id="submit-phrase">submit</button>
+        </form>
+      </section>
+    </div>
+
+    <div class="phrases" id="phrases">
+      <table class="phrase-table" id="phrase-table-id" hidden>
+        <thead>
+          <tr>
+            <th scope="col" id="home-language"></th>
+            <th scope="col" id="target-language"></th>
+          </tr>
+        </thead>
+        <tbody id="phrase-table-body">
+        </tbody>
+      </table>
+    </div>
+
+  </main>
+
+</body>
+</html>

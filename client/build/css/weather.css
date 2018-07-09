@@ -1,0 +1,17 @@
+#weather-icon {
+  width: 60px;
+}
+
+#weather-card {
+  border: solid lightgrey 1px;
+  border-radius: 4px;
+  background-color: #83b8e7;
+  padding: 4px;
+  text-align: center;
+}
+
+#weather-card p,
+#weather-card h3 {
+  margin: 0;
+  padding: 0;
+}

@@ -1,0 +1,47 @@
+.phrases{
+  width: 100%;
+  font-family: 'Noto Sans', sans-serif;
+  text-align: left;
+}
+
+
+
+select{
+  height: 2em;
+  font-size: 1em;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+#phrase-table{
+  border: 1px solid lightgrey;
+  display: flex hidden;
+  border-radius: 4px;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+th,
+td{
+  padding: 0.5em;
+  margin-right: 0.5em;
+  margin-top: 0.5em;
+}
+
+th{
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+#phrase-input{
+  padding: 0.5em;
+  margin: 1em;
+  height: 1.5em;
+  font-size: 1em;
+  min-width: 400px;
+  max-width: 80%;
+  border-radius: 4px;
+  border: solid lightgrey 1px;
+
+  #submit-phrase{
+    margin: 0 1em;
+  }
